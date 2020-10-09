@@ -1,0 +1,40 @@
+﻿@model ImageUploadToDBWithDotnetCore.Models.User
+
+@{
+    ViewData["Title"] = "Upload";
+}
+
+@{
+    var uploadResponse = ViewData["apiResponse"];
+}
+
+Response: @uploadResponse
+@*<form method="post" action="Index" enctype="multipart/form-data">*@
+<form id="registerMember" method="post" action="Upload" enctype="multipart/form-data">
+    <div class="form-group row">
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control">
+        </div>
+
+        <div class="custom-file">
+            <label asp-for="Image"></label>
+            <input asp-for="Image" class="form-control" type="file" accept="image/*" multiple>
+        </div>
+
+    </div>
+
+    <img src="C:/Users/ASUS-OWNER/Pictures/Theo/Bridgette.jpg" width="400" height="350" />
+
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+    </div>
+
+
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+}

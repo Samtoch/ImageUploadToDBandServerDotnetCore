@@ -1,0 +1,57 @@
+﻿@model ImageUploadToDBWithDotnetCore.Models.User;
+
+@{
+    ViewData["Title"] = "AddFile";
+}
+
+<h2>Add File</h2>
+
+@if (!string.IsNullOrEmpty(@ViewData["apiResponse"].ToString()))
+{
+<p> Response: @ViewData["apiResponse"] </p>
+}
+{
+    var uploadResponse = ;
+}
+
+
+@*<form method="post" action="Index" enctype="multipart/form-data">*@
+<form id="registerMember" method="post" asp-controller="Home" asp-action="Index" enctype="multipart/form-data">
+    <div class="form-group row">
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control">
+        </div>
+
+        <div class="custom-file">
+            <label asp-for="Image"></label>
+            <input asp-for="Image" class="form-control" type="file" accept="image/*" multiple onchange="ShowPreview(this)">
+        </div>
+
+    </div>
+
+    <img id="PreviewImage" src="#" alt="Your Image" width="250" height="200" />
+
+    <div class="text-center panel-body">
+        <a asp-controller="Home" asp-action="Upload">Go to Image Upload</a>
+        <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+    </div>
+
+
+</form>
+
+@section Scripts {
+    <script type="text/javascript">
+
+        function ShowPreview(input) {
+            if (input.files && input.files[0]) {
+                var ImageDir = new FileReader();
+                ImageDir.onload = function (e) {
+                    $('#PreviewImage').attr('src', e.target.result);
+                }
+                ImageDir.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}

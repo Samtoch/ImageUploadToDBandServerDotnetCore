@@ -1,0 +1,9 @@
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.csprojAssemblyReference.cache
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.MvcApplicationPartsAssemblyInfo.cache
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.AssemblyInfoInputs.cache
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.AssemblyInfo.cs
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.TagHelpers.input.cache
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.TagHelpers.output.cache
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.dll
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.pdb
+C:\c#Projects\ImageUploadToDBWithDotnetCore\obj\Debug\netcoreapp3.1\ImageUploadToDBWithDotnetCore.RazorCoreGenerate.cache
